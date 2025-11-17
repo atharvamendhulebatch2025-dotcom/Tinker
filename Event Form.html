@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event-Registration Form</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100vh;
+            margin: 0;
+
+        }
+       
+        .form-container {
+            max-width: 300px;
+           
+            background-color: #fff;
+           
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(255, 0, 0, 0.9) ;
+            border-radius: 5px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            }
+            input,select {
+                width: 100%;
+                padding: 8px;
+                border-radius: 4px;
+                margin-top: 5px;
+                border: 1px solid #ccc
+                }
+
+            h2 {
+                text-align: center;
+            }
+            label {
+                display: block;
+                margin-top: 10px;
+                font-weight: bold;
+            }
+            input[type="submit"] {
+                background-color: #007bff;
+                color: #fff;
+                border: none;
+                cursor: pointer;
+                margin-top: 15px;
+            }
+            input[type="submit"]:hover {
+                background-color: #0056b3;
+            }
+           
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>SIT Nagpur-Event Registration</h2>
+        <form>
+       <label for="name"> Name:</label>
+        <input type="text" name="name" required id="name">
+        <label for="email">Email:</label>
+        <input type="email" name="email" required id="email">
+        <label for="event">Select Event:</label><br>
+        <select id="event" name="event" required>
+            <option value="">--Choose an Event--</option>
+            <option value="hackathon">Hackathon</option>
+            <option value="webdesign">WebDesign</option>
+        </select>
+        <input value="Register" type="submit">
+    </form>
+    </div>
+</body>
+</html>
